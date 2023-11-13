@@ -17,7 +17,7 @@ import (
 // Main
 func main() {
 
-    bot, err := tgbotapi.NewBotAPI("6768818695:AAFWCRWYqI0eEL809sxVEJ25HQa8G2rQ3Nc")
+    bot, err := tgbotapi.NewBotAPI("6537905618:AAFMMIJdLl95jryktXC0qugUxtdonQ-moRs")
     if err != nil {
         log.Panic(err)
     }
@@ -45,7 +45,7 @@ func main() {
             if (update.Message.Text == "/start") {
 
                 // Istanzio il messaggio da inviare
-                msg := tgbotapi.NewMessage(update.Message.Chat.ID, "Ciao " + update.Message.From.FirstName + " questo è il bot delle frasi del giorno ideato e sviluppato da Doppia M e Lino" + "\U0001F4AB" + "\nUtilizza il comando /frase per mostrare la frase del giorno" + "\U0001F632")
+                msg := tgbotapi.NewMessage(update.Message.Chat.ID, "Ciao " + update.Message.From.FirstName + " questo è il bot delle frasi del giorno, ideato e sviluppato da Doppia M e Lino" + "\U0001F4AB" + "\nUtilizza il comando /frase per mostrare la frase del giorno" + "\U0001F632")
 
                 // Invio il messaggio di benvenuto
                 bot.Send(msg)
