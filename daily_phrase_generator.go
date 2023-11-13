@@ -17,9 +17,6 @@ import (
 
 func main() {
 
-	// Genero la frase del giorno
-	generateDailyPhrase();
-
 	// Imposto il timer fino alla prossima mezzanotte
 	timer := time.NewTimer(time.Until(nextMidnight()))
 	<- timer.C
