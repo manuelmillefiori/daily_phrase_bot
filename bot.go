@@ -1,3 +1,8 @@
+/**
+ * Author: Manuel Millefiori
+ * Date: 2023-11-10
+ */
+
 package main
 
 // Importo la libreria per utilizzare
