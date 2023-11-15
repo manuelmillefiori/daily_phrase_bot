@@ -26,6 +26,9 @@ func main() {
 		// Genero la frase del giorno e la scrivo
 		// sul file
 		generateDailyPhrase()
+
+		// Sleep per evitare problematiche
+		time.Sleep(60)
 		
 		// Resetto il timer
 		timer.Reset(24 * time.Hour)
